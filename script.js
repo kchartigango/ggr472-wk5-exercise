@@ -43,4 +43,19 @@ map.on('load', () => {
 
     });
 
+    map.addSource('buildings-data', {
+        type: 'geojson',
+        data: ''
+    });
+
+    map.addLayer({
+        'id': 'buildings-point',
+        'type': 'circle',
+        'source': 'buildings-data',
+        'paint': {
+            'circle-radius': 5,
+            'circle-color': '#007cbf'
+        }
+    });
+
 });
