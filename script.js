@@ -45,7 +45,7 @@ map.on('load', () => {
 
     map.addSource('buildings-data', {
         type: 'geojson',
-        data: ''
+        data: 'https://raw.githubusercontent.com/kchartigango/ggr472-wk5-exercise/main/wk5-data/buildings.geojson'
     });
 
     map.addLayer({
